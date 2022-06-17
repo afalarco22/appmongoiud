@@ -1,0 +1,42 @@
+/ Para equipos---------------------------------------------------------------------------------------
+// crear equipo (
+
+###
+POST http://localhost:9000/api/equipos HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "a borrar tipo equipo prueba con if",
+    "estado": true
+    
+}
+
+
+// obtner todos los equipos
+###
+GET http://localhost:9000/api/equipos HTTP/1.1
+
+// obtener un equipo por id (poner id en la url despues de equipo)
+###
+GET http://localhost:9000/api/equipos/628b0ca72a594ab51cf6ba49 HTTP/1.1
+
+
+// actualizar equipo (poner id en la url despues de equipo)
+###
+PUT http://localhost:9000/api/equipos/628b0ca72a594ab51cf6ba48 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "borrador tipo equipo prueba 2 con if",
+    "estado": true
+    
+}
+
+
+// borrar equipos
+###
+DELETE http://localhost:9000/api/equipos/628bf51fd2529e9f688eece1 HTTP/1.1
+
+
+
+
